@@ -1,0 +1,495 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #17252A;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section-slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('static/portfoliobackground.gif');
+    background-size: cover;
+    background-position: center;
+    height: 52vh; 
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #17252A;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero-section-slideshow::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url('static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px); 
+}
+
+.hero-overlay-slideshow {
+    max-width: 1500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+    z-index: 1;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('static/pizza1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 52vh; 
+    margin-top:25px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url('static/pizza1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); 
+    z-index: -1;
+}
+
+.hero-section:hover {
+    transform: scale(1.03) ;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9); 
+}
+
+.hero-overlay {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(43, 122, 120, 0.85); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: white;
+    position: relative; 
+    z-index: 1;
+}
+
+.hero-overlay p{
+    color:#17252A
+}
+.advanced-state h1{
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Additional styles to ensure responsiveness and appearance */
+@media (max-width: 768px) {
+    .hero-overlay {
+        padding: 10px;
+        margin: 0 20px; 
+    }
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero-overlay h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.hero-overlay p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.narrative-introduction {
+    padding: 50px;
+    background-color: #DEF2F1;
+}
+
+.introduction-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #17252A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journey-map {
+    padding: 50px;
+    background-color: #e6e6e6;
+    overflow-x: auto;
+}
+
+.journey-container {
+    display: flex;
+    gap: 30px;
+}
+
+.learning-outcomes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    justify-content: center; /* Center the cards within the section */
+    background-color: #F0F7F4; /* A lighter background for contrast */
+    margin: 0 auto; /* Center the grid in the page if needed */
+}
+
+.outcome-card {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    height: 100px; 
+    background-color: #17252A;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; 
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outcome-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.outcome-card {
+    background: linear-gradient(145deg, #151c24, #1c2732);
+}
+.learning-outcomes-container {
+    max-width: 1200px; 
+    margin: 25px auto; 
+    padding: 50px 15px;
+    background-color: #DEF2F1;
+    box-shadow: 0 0 0 1px #DEF2F1; 
+}
+.outer-container {
+    padding: 25px; 
+    background-color: #DEF2F1; 
+}
+
+.learning-outcomes-container {
+    max-width: 1200px; 
+    margin: auto;
+    padding: 50px 15px;
+    background-color: #DEF2F1;
+}
+
+.learning-outcomes-category {
+    margin-bottom: 50px; /* Space between categories */
+}
+
+.outcomes-heading {
+    text-align: center;
+    color: #17252A;
+    margin-bottom: 30px; /* Space between heading and cards */
+}
+
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center; /* Center the cards within the category */
+}
+@media (max-width: 768px) {
+    .outcomes-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+    .learning-outcomes-category {
+        margin-bottom: 30px; /* Less space between categories on smaller screens */
+    }
+}
+/* Responsive considerations */
+@media (max-width: 768px) {
+    .learning-outcomes {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust card size on smaller screens */
+    }
+    .outcome-card {
+        padding: 15px;
+        height: 80px; /* Adjust height for smaller screens */
+    }
+}
+
+footer.advanced-state {
+    background-color: #17252A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add media queries to ensure responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}
+
+.name-pizza{
+    padding-right: 20px;
+    flex: 0 1 auto;
+    margin: 10px;
+}
+
+.name-logo-pizza {
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: block;
+    backface-visibility: hidden; 
+    position:absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.name-logo-pizza:hover {
+    opacity: 0.8; 
+}
+
+.logo-pizza {
+    width: auto; 
+    height: 5vw; 
+    max-height: 60px; 
+    flex: 0 1 auto;
+}
+
+.greeting-pizza {
+    margin: 10px;
+    font-size: 2vw; 
+    font-weight: bold;
+}
+
+.main-content {
+    margin-right: 60px;
+}
+
+.column p, .column-second p, .column-third p,
+.text-content {
+    font-size: 1rem;
+    color: white;
+}
+
+.pizza-header .name {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        height: 7vw; 
+    }
+
+    .header-title {
+        font-size: 3.5vw;
+    }
+}
+
+/* Adjusting for Small Screens */
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 10vw;
+    }
+
+    .header-title {
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width: 800px) {
+.column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-box,
+    .text-box-second {
+        min-width: 300px; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .text-box,
+    .text-box-second {
+        min-width: auto; 
+        width: 100%; 
+    }
+}
+
+h1, h2 {
+    font-size: 2em;
+} 
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    border-radius: 25px;
+}
+  
+.mySlides {
+    min-width: 100%; 
+    transition: transform 0.5s ease-in-out; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    margin-right: -4px;
+}
+  
+.mySlides img {
+    width: 100%; 
+    height: 500px;
+    object-fit: cover; 
+    border-radius: 25px;
+}
+  
+/* Fade in animation */
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* Darker on hover */
+}
+  
+  /* Dot navigation */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #DEF2F1; 
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #2B7A78;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.slideshow-container:hover .prev {
+    left: 10px;
+}
+  
+.slideshow-container:hover .next {
+    right: 10px;
+}
+/*

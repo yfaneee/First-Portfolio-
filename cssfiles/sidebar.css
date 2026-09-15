@@ -1,0 +1,181 @@
+/* Styling for a fixed sidebar */
+.sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #2B7A78;
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* Style for sidebar header */
+.projects-sidebar h3 {
+    margin: 0;
+    font-size: 46px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 50px;
+}
+
+/* List styling within the sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling within the sidebar */
+.sidebar li {
+    margin-bottom: 180px;
+    white-space: nowrap;
+}
+
+/* Styling for links within the sidebar */
+.sidebar a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: block;
+    writing-mode: vertical-rl;
+}
+
+.about, .projects, .contact {
+    padding: 50px 20px;
+}
+
+.contact-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%; 
+    background-color: #40E0D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    display: none; 
+    z-index: 2;
+}
+
+.projects-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(to left, #3AAFA9, #2B7A78);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: none;
+    z-index: 2;
+}
+
+.about-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(to left, #3AAFA9, #2B7A78);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    display: none;
+    z-index: 2;
+}
+
+/* Close button styling for different sections */
+#close-contact,
+#close-about,
+#close-projects {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+/* Grid layout for projects */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-content: start;
+}
+
+/* Styling for individual projects */
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styling for images within projects */
+.project img {
+    width: 84%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+    margin-top: 10px;
+    border: 4px solid transparent;
+    aspect-ratio: 1;
+}
+
+/* Hover effect for project images */
+.project:hover img {
+    transform: scale(1.03);
+    border: 4px solid #3AAFA9;
+}
+
+/* Information overlay for projects */
+.project .project-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 82.85%;
+    background: #3AAFA9;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    overflow: hidden;
+}
+
+/* Hover effect to display project information */
+.project:hover .project-info {
+    bottom: 0;
+}
+
+/* Styling for the main content area */
+#main-content {
+    width: 75%;
+    float: left;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    #main-content {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*

@@ -1,0 +1,298 @@
+/* Basic styling and layout for the entire page */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFFFF;
+}
+
+/* Scrollbar customization */
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+html, body {
+    overflow-y: scroll; 
+}
+
+/* Flexbox layout for the left side content */
+.left-side {
+    margin-right: 20px; 
+}
+
+/* Styling and layout for centrally aligned text */
+.center-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+    margin-top: 40px;
+}
+/* Header styling */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('static/backgroundindex.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 52vh; 
+    margin-top:7px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url('static/backgroundindex.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px); 
+}
+
+.hero-overlay {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(43, 122, 120, 0.85); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: white;
+    position: relative; 
+    z-index: 1;
+}
+
+.hero-overlay p{
+    color:#17252A
+}
+
+.hero-overlay h1{
+    color:white;
+}
+.outer-containerheadermain{
+    padding:0.1px;
+    background-color:#17252A; 
+}
+.name-logo-duck {
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: block;
+    backface-visibility: hidden; 
+    position:absolute;
+    top: 40px;
+    left: 45px;
+    z-index: 5;
+}
+
+.name-logo-duck:hover {
+    opacity: 0.8; 
+}
+
+/* Main content styling */
+.main-content {
+    margin-right: 60px;
+}
+
+/* Styling for a logo with hover effects */
+.name-logo {
+    margin: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%; 
+    overflow: hidden;
+    display: block; 
+}
+
+.name-logo:hover {
+    transform: rotateY(360deg); 
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.name-logo:hover {
+    opacity: 0.8; 
+}
+
+/* Text styling for greeting and intro sections */
+.greeting {
+    letter-spacing: 2px;
+    margin: 0; 
+    font-size: 46px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color:white;
+}
+
+.intro-text {
+    font-size: 25px;
+    font-family: 'DM Sans', sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+    color:#17252A
+}
+
+.project-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Styling for project images */
+.project-image img {
+    margin-top: 30px;
+    width: 60%; 
+    height: auto; 
+    object-fit: cover;  
+    margin-left: auto; 
+    margin-right: auto;
+    display: block; 
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.8); 
+}
+
+.project-description {
+    color:#17252A;
+    font-size: large;
+    width: 50%; 
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Button styling with animation */
+#feedback-button {
+    cursor: pointer;
+    background-color: #f0ad4e;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+#feedback-button p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* Container for gif with hover text */
+.gif-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.gif-container .hover-text {
+    position: absolute;
+    bottom: 25px; 
+    right: 50px; 
+    display: none;
+    background-color:#2B7A78;
+    color: white; 
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    z-index: 10;
+}
+
+.gif-container:hover .hover-text {
+    display: block;
+}
+
+/* Style for a close button with hover effect */
+.close {
+    position: absolute;
+    top: 15px; 
+    right: 15px; 
+    color: #aaa; 
+    font-size: 28px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #17252A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .project-feature {
+        flex-direction: column;
+    }
+
+    .project-image img, .project-description {
+        width: 80%; 
+    }
+
+    .sidebar a {
+        font-size: 14px; 
+        max-height: 3em; 
+    }
+
+    .sidebar {
+        position: static; 
+    }
+
+    .content, .sidebar {
+        width: 100%; 
+    }
+
+    body, p, h1, h2, h3 {
+        font-size: smaller; 
+    }
+
+    .greeting{
+        font-size: 18px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .name-logo {
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*

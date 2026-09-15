@@ -1,0 +1,161 @@
+/* Styling for the about section */
+.about-section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin-bottom: 20px; 
+    background: linear-gradient(to right, #3AAFA9, #2B7A78); 
+    border-radius: 8px; 
+    text-align: center;
+    max-width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section h2 {
+    font-size: 17px; 
+    color: #333; 
+}
+
+.about-sidebar p,.about-sidebar li,.about-sidebar h2{
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.about-section p {
+    font-size: 17px; 
+    text-align: justify;
+}
+
+.about-highlights {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about-highlights li {
+    margin-bottom: 5px; 
+}
+
+.social-media-links a {
+    margin: 0 5px;
+    color: inherit; 
+}
+
+.programming-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming-skills a {
+    margin: 0 10px;
+    font-size: 33px;
+}
+
+/* Specific color styling for different programming language icons */
+.programming-skills a[title="Python"] i {
+    color: #3776AB; 
+}
+
+.programming-skills a[title="C#"] i {
+    color: #239120; 
+}
+
+.programming-skills a[title="HTML5"] i {
+    color: #E34F26; 
+}
+
+.programming-skills a[title="CSS3"] i {
+    color: #1572B6; 
+}
+
+.programming-skills a[title="C++"] i {
+    color: #00599C; 
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-section p, .about-highlights {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 80%; 
+}
+
+/* Styling for the profile picture */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    margin-bottom: 15px;
+}
+
+.about-section h2 {
+    background: 0;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    color:white;
+    margin-bottom: 20px;
+}
+
+.about-highlights {
+    color:white;
+    margin-bottom: 20px;
+}
+
+.programming-skills {
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    margin: 0;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+}
+
+.skill-per {
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    padding-right: 5px;
+    transition: 1s ease;
+}
+
+/* Responsive adjustments for about section on smaller screens */
+@media (max-width: 768px) {
+    .about-section {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/*

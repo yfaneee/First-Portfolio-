@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cssfiles/duck.css">
+    <link rel="stylesheet" href="cssfiles/contact.css">
+    <link rel="stylesheet" href="cssfiles/styles.css">
+    <link rel="stylesheet" href="cssfiles/sidebar.css">
+    <link rel="stylesheet" href="cssfiles/about.css">
+    <link rel="stylesheet" href="cssfiles/prism.css">
+    <link rel="stylesheet" href="cssfiles/portfolio.css">
+
+    <title>Web Art Gallery - Duck </title>
+</head>
+<body> 
+    <!-- Sidebar -->
+    <nav class="sidebar" id="main-sidebar">
+        <ul>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="projects-link">Projects</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <!-- Project sidebar -->
+        <aside class="projects-sidebar" id="projects-sidebar">
+            <h3>Work</h3>
+            <div id="projects">
+            </div>
+            <span id="close-projects" onclick="closeProjectsSidebar()">x</span>
+        </aside>
+    
+        <!-- About sidebar -->
+        <aside class="about-sidebar" id="about-sidebar">
+            <div class="about-section">
+                <img src="cssfiles/static/Contact.jpg" alt="Your Name" class="profile-picture">
+                <h2>About Me</h2>
+                <p>Hello! I'm Stefan, a passionate and dedicated software developer with a focus on creating impactful and user-friendly applications. With a strong background in Python, C#, and web development (HTML/CSS), I thrive on challenging projects that require innovative solutions. My goal is to combine technical skills and creativity to develop software that makes a difference.
+                </p>
+                <ul class="about-highlights">
+                    <li>Proficient in Python, C# and C++ with 5 years of experience in developing robust applications.</li>
+                    <li>Skilled in front-end development using HTML/CSS, creating responsive and visually appealing interfaces.</li>
+                    <li>Experience in Photoshop, Adobe Premier Pro and FLStudio.</li>
+                    <li>Strong problem-solving skills with a focus on delivering user-centric solutions.</li>
+                </ul>
+                <div class="programming-skills">
+                    <a href="https://www.python.org/" target="_blank" title="Python"><i class="fab fa-python"></i></a>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" title="C#"><i class="fab fa-cuttlefish"></i></a> 
+                    <a href="https://www.w3.org/html/" target="_blank" title="HTML5"><i class="fab fa-html5"></i></a>
+                    <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" title="CSS3"><i class="fab fa-css3-alt"></i></a>
+                    <a href="https://www.cplusplus.com/" target="_blank" title="C++"><i class="fab fa-cuttlefish"></i></a> 
+                </div>
+            </div>
+            <span id="close-about" onclick="closeAboutSidebar()">x</span>
+        </aside>
+    
+        <!-- Contact sidebar -->
+        <aside class="contact-sidebar" id="contact-sidebar">
+            <div class="contact-header">
+                <img src="cssfiles/static/About.jpg" alt="Your Name" class="avatar-icon">
+                <h2>Contact</h2>
+            </div>
+            <div id="contact-sidebar">
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="contact-input">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="contact-input">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required class="contact-input">
+                    <textarea id="message" name="message" placeholder="Your Message" required class="contact-input"></textarea>
+                    <button type="submit" class="contact-submit">Send Message</button>
+                </form>
+                <div class="social-media-links">
+                    <a href="https://www.instagram.com/yfaneee/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://git.fhict.nl/I503826" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@racksonz6905/videos" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>        
+            <span id="close-contact" onclick="closeContactSidebar()">x</span>
+        </aside>
+        <section class="outer-containerheader">
+        <section class="hero-section-duck">
+            <div class="hero-overlay">
+                <h1>Online Art Gallery</h1>
+                <p>Art gallery for children, project created with HTML, CSS & JavaScript </p>
+            </div>
+        </section>
+        </section>
+        <img src="cssfiles/static/logo.png" alt="Stefan Tomescu Logo" class="name-logo-duck" id="home-link">  
+    
+        <section class="narrative-introduction">
+            <!-- Scroll-triggered animation content goes here -->
+            <div class="introduction-text"> 
+                <h2>Project Description</h2>
+                <p>Welcome to "Fauna 51" – a unique fusion of classical artistry and digital innovation crafted by our dedicated team. In this online sanctuary, we celebrate the timeless allure of classic paintings while infusing them with a whimsical twist: each masterpiece is reimagined with animals as the protagonists, brought to life through the magic of AI.<br>Our virtual museum is more than just a gallery; it's an interactive experience that educates and entertains. Delve into the fascinating world of art history, discover intriguing facts, and explore the significance behind each work.<br>But we don't stop at visual admiration. "Fauna 51" offers an exclusive line of merchandise, allowing patrons to take a piece of this reimagined history home. From bespoke prints to designer apparel, each item in our collection is a conversation starter.</p></div>
+            <!-- Add more narrative content as needed -->
+        </section>
+        <section class="outer-container">    
+            <section class="learning-outcomes-container">
+            <div class="learning-outcomes-category">
+                <h2 class="outcomes-heading">Technical Learning Outcomes</h2>
+                <div class="outcomes-grid">
+                    <div class="outcome-card" data-content-id="trendsAndDevelopmentsContent">Trends and Developments</div>
+                <div id="trendsAndDevelopmentsContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>In the creation of the online art gallery, my engagement with the latest trends in digital experience design was not just theoretical but deeply practical. This project served as a canvas to apply cutting-edge design concepts, particularly focusing on how these trends could enhance the user's interaction and enjoyment of art in a digital space.
+                    One of the standout features of the art gallery was the incorporation of a 3D model set on a continuous rotation—a duck in a pond—on the contact page. This choice was inspired by the rising trend of using 3D elements to create more immersive and engaging web experiences. The model was not just decorative but a deliberate attempt to draw users into the gallery's world, offering a unique interaction point that set the tone for the creativity housed within.
+                    The contact form's design was guided by the trend towards minimalism in digital design. Using Formspree, I crafted a user-friendly form that embodied simplicity and ease of use, ensuring that visitors could easily reach out without navigating through complicated or cluttered interfaces. This approach was about stripping down to the essentials to enhance functionality, a principle that has become increasingly important in modern web design.
+                    The development of the online art gallery was a journey marked by a commitment to embracing current trends in digital experience design. From the interactive 3D model to the minimalist contact form, each design choice was a step towards creating an art gallery that was not just a space to view art but an artwork in itself. This project highlighted the importance of staying abreast of design trends, being receptive to feedback, and continually striving for improvement. It was a vivid demonstration of how digital trends could be harnessed to create engaging, user-friendly, and aesthetically pleasing digital environments.</p>
+                </div>
+                <div class="artworkimage">
+                    <img src="cssfiles/static/duckguf.gif" alt="artwork">
+                </div>
+                </div>
+                <div class="outcome-card" data-content-id="iterativeProcessContent">Iterative Process</div>
+                <div id="iterativeProcessContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>The journey of creating Fauna 51, an online art gallery blending classic art with animals through AI for children, epitomizes the essence of the iterative design process. Initially envisioned as a gallery for a broad audience, the project's direction shifted dramatically through continuous feedback and reflection, underscoring the project's evolution to meet user needs and preferences.
+                    Our initial ambition was to craft an online space where art and technology converged, offering an immersive experience to all visitors. However, through extensive discussions and feedback from peers, teachers, and other stakeholders, we recognized the potential impact of focusing on a specific audience. This pivotal moment redirected our efforts towards creating an engaging, educational platform for children aged 5-8 years, integrating AI with classical art and animals to produce a unique learning experience.
+                    The transformation from a general art gallery to Fauna 51 was not without its hurdles. Team communication and workflow issues presented significant challenges, demanding flexibility, patience, and a commitment to collaborative problem-solving. Feedback became our guiding light, leading to numerous iterations that gradually shaped the project's identity. Each round of critiques and suggestions propelled us to reconsider and refine our approach, ensuring the final product would resonate with our young audience.
+                    In response to feedback emphasizing the importance of vibrant, captivating visuals for children, we infused Fauna 51 with color and whimsy. The transition to a more colorful and visually appealing design was not merely aesthetic but strategic, aimed at capturing the imagination of children and fostering a love for art and learning. These changes were meticulously documented and incorporated, reflecting our dedication to creating an environment where art becomes accessible and enjoyable for kids.</p>
+                </div>
+                    <div class="feedbackimage">
+                        <img src="cssfiles/static/progress/feedbackpresentation.JPG" alt="feedback">
+                    </div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/documentation/contacts.JPG" alt="contacts">
+                        <img src="cssfiles/static/documentation/contactsfaq.JPG" alt="contactsfaq">
+                        <img src="cssfiles/static/documentation/gallery.JPG" alt="gallery">
+                        <img src="cssfiles/static/progress/ducknow.JPG" alt="ducknow">
+                        <img src="cssfiles/static/progress/gallerynow.JPG" alt="gallerynow">
+                    </div>
+                </div>
+                <div class="outcome-card" data-content-id="interactivePrototypesContent">Interactive Prototypes</div>
+                <div id="interactivePrototypesContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>In the development of Fauna 51, an online art gallery designed for children, our primary objective was to create an environment that was not just visually appealing but also intuitively interactive. This journey began with a minimalist design ethos, ensuring the digital space we were crafting would be both user-friendly and conducive to a child's exploration.
+                        The design process initiated with hand-drawn paper prototypes, a method that allowed us to rapidly conceptualize and iterate on our ideas. These early sketches served as the foundation for our project, embodying our vision for a platform that could seamlessly blend art with education for a young audience. Upon presenting these preliminary designs to colleagues and teachers, we gathered valuable feedback, which prompted refinements before moving to the digital prototyping stage in Figma.
+                        Our technical framework predominantly utilized HTML and CSS, chosen for their flexibility and effectiveness in creating responsive designs. A modest addition of JavaScript enriched the user experience, enabling dynamic interactions such as the contact form submission and the captivating 3D model animation—elements that were crucial in making the gallery not just a site to visit, but an experience to engage with.
+                        Throughout this process, we employed Google Forms to collect ongoing feedback, a strategy that ensured our design remained aligned with user expectations and accessible to our target demographic. This feedback loop was instrumental in our iterative design process, allowing us to adapt and enhance Fauna 51 continuously.
+                        The journey from concept to completion was as much a learning experience as it was a design challenge. Each stage of feedback and revision taught me the value of user-centered design, especially when creating digital spaces for children. The iterative process underscored the importance of flexibility in design and the need to remain open to feedback—principles that have profoundly influenced my approach to digital product development.
+                        Creating Fauna 51 was a testament to the power of interactive prototypes in the design process. By weaving together minimalistic aesthetics, thoughtful user interactions, and continuous feedback, we crafted a digital art gallery that not only educates but also delights its young audience. This project has not only broadened my skills in digital design but also deepened my appreciation for the iterative process as a cornerstone of user-centric development.</p>         
+                    </div>
+                    <div class="feedbackimage">
+                        <img src="cssfiles/static/progress/feedbackprototype.JPG" alt="feedbackprototype">
+                    </div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/progress/figmaduck.JPG" alt="figmaduck.JPG">
+                        <img src="cssfiles/static/documentation/sitelayout.jpeg" alt="sitelayout">
+                        <img src="cssfiles/static/documentation/stitelayoutdesign.jpeg" alt="stitelayoutdesign">
+                        <img src="cssfiles/static/documentation/fauna.JPG" alt="fauna">
+                    </div>
+                </div>
+                <div class="outcome-card" data-content-id="targetgroupContent">Target group</div>
+                <div id="targetgroupContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>Our approach began with an exploration into the psychological impact of colors on children. This research informed our palette choices, ensuring that every hue contributed positively to the user experience, fostering an environment that was both stimulating and comforting. Additionally, we recognized the importance of interactivity in maintaining children's engagement. This led to the development of features like the gallery page, where clicking on an artwork not only enlarges it but also unveils the real painting alongside educational tidbits about the artwork and its creator.
+                    Understanding our audience's developmental stage guided us in making the site as navigable and enjoyable as possible. A notable innovation was the custom cursor design—a Mickey Mouse glove—transforming each click and hover into a delightful discovery, making the digital exploration feel more personal and engaging for young users.
+                    Feedback is a cornerstone of effective design, especially when creating for children. One piece of user feedback highlighted that our initial color scheme might be too dark for a child-friendly site. Taking this insight to heart, we embarked on a redesign, brightening the color palette to better suit our young audience's preferences and enhance the overall vibrancy of the site. This change was not just aesthetic but aligned with our goal to create a welcoming, joyful space for children to explore art.
+                    Creating Fauna 51 was a journey marked by a profound respect for our target group's needs and preferences. Through research, iterative design, and responsive feedback integration, we developed an online art gallery that resonates with children, inviting them into a world where art comes alive. This project has reinforced the value of a user-centered approach, reminding us that the best digital experiences are those crafted with the end-user's interests at heart.</p>         
+                    </div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/progress/galleryloop.JPG" alt="galleryloop">
+                        <img src="cssfiles/static/progress/galleryloopdone.JPG" alt="galleryloopdone">
+                        <img src="cssfiles/static/progress/colorresearch.JPG" alt="colorresearch">
+                        <img src="cssfiles/static/progress/colorslearning.JPG" alt="colorslearning">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="learning-outcomes-category">
+                <h2 class="outcomes-heading">Professional Learning Outcomes</h2>
+                <div class="outcomes-grid">
+                    <div class="outcome-card" data-content-id="future-orientedOrganisationContent">Future-oriented Organisation</div>
+                <div id="future-orientedOrganisationContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>Our team embarked on this journey with a structured approach, delineating roles and responsibilities early on to ensure efficiency and accountability. The project plan included:
+                    <br>Digital Prototype Development: Led by our Planner, Maksim, and executed with the support of colleagues Josif and Luca, our digital prototype was the blueprint from which the fully functional web application emerged.
+                    <br>Technical Implementation: My role encompassed weaving the fabric of the website with HTML, CSS, and a touch of JavaScript, creating a seamless and engaging user experience. The backend functionality, although minimal, was crucial in supporting the gallery's interactive features.<br>
+                    Our project was not without its risks, from scope changes to technical hurdles. Each risk was met with a pre-emptive solution, ensuring that unexpected challenges did not derail our progress. Regular team meetings and a commitment to clear communication helped us navigate these obstacles, adapting our strategies as needed to stay aligned with our objectives.
+                    Quality was paramount in our project execution. Implementing a robust quality assurance process, we ensured that Fauna 51 not only met but exceeded the expectations of our intended audience. Feedback from peers, teachers, and potential users was integral to this process, providing insights that refined and enhanced the gallery's design and functionality.
+                    The development of Fauna 51 exemplifies the essence of future-oriented organisation. Through meticulous planning, strategic risk management, and a commitment to quality, our team transformed a visionary concept into a tangible reality. This project not only showcases our technical and creative skills but also our ability to think ahead, plan with precision, and execute with excellence, setting a new standard for digital art engagement.</p>         
+                    </div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/progress/teamcharta.JPG" alt="teamcharta">
+                        <img src="cssfiles/static/progress/teamcharta2.JPG" alt="teamcharta2">
+                        <img src="cssfiles/static/progress/projectplan1.JPG" alt="projectplan1">
+                        <img src="cssfiles/static/progress/projectplan2.JPG" alt="projectplan2">
+                        <img src="cssfiles/static/progress/miro.JPG" alt="miro">
+                    </div>
+                </div>
+                <div class="outcome-card" data-content-id="investigativeProblemSolvingContent">Investigative Problem Solving</div>
+                <div id="investigativeProblemSolvingContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>The development of Fauna 51, an innovative online art gallery blending AI with classical art and animals, presented a unique set of challenges that extended beyond the technical realm into the intricacies of team collaboration and project vision. Our journey was marked by a critical investigation into not only the project's conceptual direction but also the dynamics within our team.
+                        Early in the project, we encountered significant hurdles stemming from communication gaps among team members and differing visions between the group and our team leader. These issues led to delays and a sense of restriction in exploring the full potential of our ideas. Despite efforts to resolve these conflicts through dialogue, the resolution was not straightforward, highlighting the need for a more structured approach to team communication and decision-making.
+                        The challenges with our team leader's acceptance of group ideas and the subsequent impact on work division prompted us to re-evaluate our collaboration strategy. We recognized the importance of balancing leadership guidance with member input to foster a more inclusive and productive environment. This realization was pivotal, albeit met with difficulties, in attempting to realign our efforts and ensure equitable task distribution.
+                        A significant conceptual challenge was solidifying a direction that effectively merged AI, classical art, and animals into a cohesive theme appealing to our target audience. The ambiguity surrounding how to integrate these elements led to a slow start, underscoring the need for a focused investigative process to define our niche and project scope clearly.
+                        The path to completing Fauna 51 was as much about navigating the complexities of team dynamics and conceptual clarity as it was about creating a digital art gallery. Our investigative problem-solving approach allowed us to address and work through significant challenges, leading to valuable learning experiences about collaboration, leadership, and project development. This journey has reinforced the importance of open communication, flexibility, and shared vision in achieving project objectives, laying a stronger foundation for future endeavors.</p>         
+                    </div>
+                    <div class="feedbackimage">
+                        <img src="cssfiles/static/documentation/feedthree.JPG" alt="feedthree">
+                        <img src="cssfiles/static/documentation/feedtwo.JPG" alt="feedtwo">
+                        <img src="cssfiles/static/documentation/feedone.JPG" alt="feedone">
+                    </div>
+                </div><div class="outcome-card" data-content-id="personalLeadershipContent">Personal Leadership</div>
+                <div id="personalLeadershipContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>In the pivotal concluding weeks of the Fauna 51 project, the essence of personal leadership was not just required but exemplified through actions that transcended the usual responsibilities of a team member. Faced with the challenge of an unfinished group project and dwindling team engagement, I assumed a leadership role to navigate us through to successful completion and refinement post-feedback.
+                    As the deadline loomed, and with the team's focus divided by individual commitments, the collective effort needed to unite the disparate parts of our project was lacking. Recognizing the urgency, I took it upon myself to consolidate the work—merging the code for the main, gallery, and contact pages into a cohesive whole. This task required not just technical acumen but a profound sense of responsibility towards the project and my team.
+                    The merch page, a crucial component of our project, remained incomplete until mere hours before the final presentation. By motivating and supporting a team member, we managed to integrate this essential piece into the project framework in time. This last-minute push exemplified the importance of teamwork, even in the eleventh hour, and highlighted my commitment to ensuring our project was presented in its most complete form.
+                    Following our presentation, when the project could have been considered 'done' by many, I chose to go further. With constructive feedback from our teachers in hand, I collaborated with a fellow group member to refine our project further, ensuring that the final submission not only met but exceeded expectations. This step was a testament to my dedication to continuous improvement and learning.
+                    The journey to complete Fauna 51 under pressing circumstances showcased not only a deep-seated drive to succeed but also a recognition of the power of personal leadership in transforming challenges into opportunities. By taking control in moments of uncertainty, motivating team members towards a common goal, and prioritizing the project's success above all, I learned the invaluable lesson that leadership is not just about guiding others but also about fostering an environment where everyone feels compelled to contribute their best. This experience has indelibly shaped my approach to teamwork, problem-solving, and personal development.
+                </p></div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/documentation/gitpush.JPG" alt="gitpush">
+                        <img src="cssfiles/static/documentation/contacts.JPG" alt="contacts">
+                        <img src="cssfiles/static/documentation/contactsnow.JPG" alt="contactsnow">
+                    </div>
+                </div>
+            <div class="outcome-card" data-content-id="targetedInteractionContent">Targeted Interaction</div>
+            <div id="targetedInteractionContent" style="display:none;">
+                <div class="introduction-textportfolio"> 
+                <p>Our engagement with teachers, through feedback sessions, meetings, and presentations, was instrumental in shaping the direction of Fauna 51. Initially, we faced challenges in communicating our vision in a way that resonated with our stakeholders. These early obstacles underscored the importance of clear and concise communication, prompting us to refine our approach to ensure our ideas were understood as intended. Through these iterative exchanges, we gained valuable insights that helped refine our project's focus and execution.
+                    The initial division of tasks within our team revealed disparities in workload and contributions, leading to friction and dissatisfaction. Recognizing the need for a more equitable distribution of responsibilities, we reassessed our approach to task allocation:<br>
+                    Mykyta took charge of the main page, setting the tone for the user's journey through the gallery.<br>
+                    Maksim was responsible for the Gallery Page and its content, a critical component of our art showcase.<br>
+                    Joseph initially tackled the Merch page, although the cart functionality remained incomplete.<br>
+                    I focused on the Contact Page and undertook the crucial role of integrating the disparate code into a cohesive whole.<br>
+                    Addressing internal conflicts was essential to maintaining project momentum. By adopting an open-dialogue approach, we worked through disagreements and challenges, striving for solutions that aligned with our project's best interests. This process was not without its difficulties, but it was a critical component of our collaborative efforts, ensuring that every voice was heard and considered.
+                    Through targeted interaction with our teachers and within our team, we navigated the complexities of bringing Fauna 51 to fruition. This process taught us the value of clear communication, the importance of balanced team dynamics, and the impact of constructive feedback on achieving a shared vision. Ultimately, these interactions were not just about building a project but about forging a team capable of overcoming obstacles through collaboration and mutual respect.
+                </p></div>
+                <div class="scroll-container">
+                    <img src="cssfiles/static/documentation/duckcreation.JPG" alt="duckcreation">
+                    <img src="cssfiles/static/documentation/creationgallery.JPG" alt="creationgall">
+                    <img src="cssfiles/static/documentation/gallerynow.JPG" alt="gallery">
+                    <img src="cssfiles/static/documentation/creationlandingpage.JPG" alt="creationland">
+                    <img src="cssfiles/static/documentation/duckalisa.jpg" alt="duckalisa">
+                </div>
+            </div>
+            </div>
+            </div>
+            <h2 class="outcomes-heading">Stages of development</h2>
+            <section class="stages-development-container">
+                <div class="outcomes-grid">
+                    <div class="stages-card" data-content-id="whereitStartedContent">Where it started</div>
+                <div id="whereitStartedContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>In the dynamic and ever-evolving world of technology and art, a unique idea took root within a group of ambitious students, culminating in an innovative project that marries classical art with modern AI technology. This is the story of how our team, affectionately named DUCK, embarked on a journey to transform the landscape of art education and entertainment for children through our online art gallery.
+                        <br>Our adventure began in the classrooms, where we were tasked with a project assignment. Amidst various ideas, we were drawn to the concept of creating an online art gallery. This wasn't just any gallery, but one that would stand out in its approach and execution. We envisioned a platform where the boundaries of classical art and contemporary technology intersect, creating a fusion that is both educational and entertaining.
+                        <br>After much brainstorming, we settled on a name that would represent our team's spirit and vision: DUCK. This quirky and memorable name soon became synonymous with our project, encapsulating our aim to create something that would resonate with our young audience.
+                        <br>The cornerstone of our project was the application of AI in reimagining classic art. We decided to take a path less traveled – replacing people in famous artworks with animals. This twist aimed not only to captivate the imagination of children but also to educate them about classical art in a fun and engaging manner. The fusion of AI technology allowed us to recreate these masterpieces with a fresh perspective, making them more relatable and enjoyable for kids.</p> </div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/documentation/contacts.JPG" alt="codesnipetportfolio">
+                        <img src="cssfiles/static/documentation/contactsfaq.JPG" alt="startside.JPG">
+                        <img src="cssfiles/static/documentation/duckalisa.jpg" alt="newduck">
+                        <img src="cssfiles/static/documentation/duckalisareveal.JPG" alt="pizzeriastart">
+                        <img src="cssfiles/static/documentation/gallery.JPG" alt="pizzaproject">
+                    </div>
+                </div>
+                    <div class="stages-card" data-content-id="advancedStateContent">Advanced State</div>
+                <div id="advancedStateContent" style="display:none;">
+                    <div class="introduction-textportfolio"> 
+                    <p>As our project journeyed forward, it underwent a significant transformation - both in concept and execution. A pivotal change was the renaming of our gallery from DUCK to Fauna 51, a name inspired by the mystique of Area 51, but with a twist that aligned with our theme - showcasing animals in art. This name change was more than just a rebranding; it symbolized our evolution and the uniqueness of our project
+                        The Fauna 51 gallery page serves as the portal to our world of AI-enhanced art. Here, visitors embark on a visual adventure, exploring our collection of artworks. Each piece, a reimagination of classical art with animals, invites the viewer to delve deeper. By clicking on a painting, one is led to a dedicated page where the original artwork and its artist are thoughtfully described. The interactive feature where hovering over the AI version reveals the real painting adds a layer of engagement and surprise, enriching the educational aspect of our gallery.  
+                        A personal touch I am particularly proud of is the 3D animation on our contact page – a duck peacefully floating in a pond. This animation, which I crafted myself, not only adds a whimsical charm to the page but also serves as a nod to our original team name, maintaining a connection to our roots.
+                        Reflecting on the journey, an aspect that stands out is the communication dynamics within our team, particularly with our team leader. Unfortunately, these interactions were not always smooth, often marred by poor communication and a tendency towards unilateral decision-making. This led to several delays and unnecessary debates over simple matters, rooted mainly in the team leader's reluctance to consider opinions divergent from his own. These challenges were significant, as they impacted not just the timeline of our project but also the team morale and collaboration.</p></div>
+                    <div class="scroll-container">
+                        <img src="cssfiles/static/progress/galleryloop.JPG" alt="portfolionow">
+                        <img src="cssfiles/static/progress/gallerynow.JPG" alt="startside.JPG">
+                        <img src="cssfiles/static/progress/galleryloopdone.JPG" alt="pizzanow">
+                        <img src="cssfiles/static/progress/ducknow.JPG" alt="pizzanowlearning">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div id="universalModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalBody"></p>
+            </div>
+        </div>
+
+        <section class="prototypes-display">
+            <!-- Interactive prototypes -->
+        </section>
+        
+        <section class="storyboard">
+            <!-- Storyboard panels with horizontal slider -->
+        </section>
+        
+        <section class="feedback-loop">
+            <!-- Engagement and feedback elements -->
+        </section>
+        
+        <section class="final-presentation">
+            <!-- Centralized slideshow for final project screens -->
+        </section>
+        </section>
+        <section class="outer-containerheader">
+            <section class="hero-section-slideshow">
+                <div class="hero-overlay-slideshow">
+            <section class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="cssfiles/static/documentation/contacts.JPG" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                    <img src="cssfiles/static/documentation/contactsnow.JPG" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                    <img src="cssfiles/static/documentation/fauna.JPG" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                    <img src="cssfiles/static/documentation/gallerynow.JPG" style="width:100%">
+                </div>
+            </div>
+        </section>
+    </section>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </section>
+        </section>    
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        <footer class="advanced-state">
+            <h1>Luca Stefan Tomescu</h1>
+        </footer>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cssfiles/contact.css">
+    <link rel="stylesheet" href="cssfiles/styles.css">
+    <link rel="stylesheet" href="cssfiles/sidebar.css">
+    <link rel="stylesheet" href="cssfiles/about.css">
+    <link rel="stylesheet" href="cssfiles/artwork.css">
+    <link rel="stylesheet" href="cssfiles/feedback.css">
+
+    <title>Food Ordering Application - Artworks </title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="main-sidebar">
+        <ul>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="projects-link">Projects</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <section class="outer-containerheader">
+        <header id="animation-container" class="draggable-header">
+            <nav class="top-nav">
+                <div class="logo">
+                    <img src="cssfiles/static/logo.png" alt="Stefan Tomescu Logo" class="name-logo-artwork" id="home-link"> 
+                </div>
+            </nav>
+            <div class="overlay">
+                <p>Interactive Art Experience</p>
+            </div>
+        </header>        
+    </section>
+        <div class="artwork-title">
+            <h1>Artwork</h1>
+        </div>
+        <section class="row">
+            <div class="column">
+              <img src="cssfiles/static/drawings/minato.jpg">
+              <img src="cssfiles/static/drawings/hokag.jpg">
+            </div>
+            <div class="column">
+                <img src="cssfiles/static/drawings/kanek.jpg">
+                <img src="cssfiles/static/drawings/pain.jpg"> 
+            </div>
+            <div class="column">
+                <img src="cssfiles/static/drawings/kak.jpg">
+                <img src="cssfiles/static/drawings/obit.jpg">
+            </div>
+        </section>
+
+        <!-- Project sidebar -->
+        <aside class="projects-sidebar" id="projects-sidebar">
+            <h3>Work</h3>
+            <div id="projects">
+            </div>
+            <span id="close-projects" onclick="closeProjectsSidebar()">x</span>
+        </aside>
+    
+        <!-- About sidebar -->
+        <aside class="about-sidebar" id="about-sidebar">
+            <div class="about-section">
+                <img src="cssfiles/static/Contact.jpg" alt="Your Name" class="profile-picture">
+                <h2>About Me</h2>
+                <p>Hello! I'm Stefan, a passionate and dedicated software developer with a focus on creating impactful and user-friendly applications. With a strong background in Python, C#, and web development (HTML/CSS), I thrive on challenging projects that require innovative solutions. My goal is to combine technical skills and creativity to develop software that makes a difference.
+                </p>
+                <ul class="about-highlights">
+                    <li>Proficient in Python, C# and C++ with 5 years of experience in developing robust applications.</li>
+                    <li>Skilled in front-end development using HTML/CSS, creating responsive and visually appealing interfaces.</li>
+                    <li>Experience in Photoshop, Adobe Premier Pro and FLStudio.</li>
+                    <li>Strong problem-solving skills with a focus on delivering user-centric solutions.</li>
+                </ul>
+                <div class="programming-skills">
+                    <a href="https://www.python.org/" target="_blank" title="Python"><i class="fab fa-python"></i></a>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" title="C#"><i class="fab fa-cuttlefish"></i></a> 
+                    <a href="https://www.w3.org/html/" target="_blank" title="HTML5"><i class="fab fa-html5"></i></a>
+                    <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" title="CSS3"><i class="fab fa-css3-alt"></i></a>
+                    <a href="https://www.cplusplus.com/" target="_blank" title="C++"><i class="fab fa-cuttlefish"></i></a> 
+                </div>
+            </div>
+            <span id="close-about" onclick="closeAboutSidebar()">x</span>
+        </aside>
+    
+        <!-- Contact sidebar -->
+        <aside class="contact-sidebar" id="contact-sidebar">
+            <div class="contact-header">
+                <img src="cssfiles/static/About.jpg" alt="Your Name" class="avatar-icon">
+                <h2>Contact</h2>
+            </div>
+            <div id="contact-sidebar">
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="contact-input">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="contact-input">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required class="contact-input">
+                    <textarea id="message" name="message" placeholder="Your Message" required class="contact-input"></textarea>
+                    <button type="submit" class="contact-submit">Send Message</button>
+                </form>
+                <div class="social-media-links">
+                    <a href="https://www.instagram.com/yfaneee/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://git.fhict.nl/I503826" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@racksonz6905/videos" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>        
+            <span id="close-contact" onclick="closeContactSidebar()">x</span>
+        </aside>
+    
+        <div class="gif-container-artwork">
+            <div id="animated-character-artwork">
+                <img src="cssfiles/static/naruto.gif" alt="Feedback Character" onclick="showFeedbackForm()">
+                <span class="hover-text" onclick="showFeedbackForm()">Play with the header!</span>
+            </div>
+        </div>
+    
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeFeedbackForm()">&times;</span>
+                <h2>Feedback</h2>
+                <form id="contact-form" action="https://formspree.io/f/xayrnwwo" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Feedback">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/artwork.js"></script>
+</body>
+</html>

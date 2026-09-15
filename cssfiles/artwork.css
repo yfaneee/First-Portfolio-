@@ -1,0 +1,232 @@
+/* Disable text selection for specified elements */
+body, 
+.sidebar, 
+.project {
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;         
+}
+
+/* Header styles */
+header {
+    height: 300px;
+    background: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    margin-top:25px;
+    margin-bottom: 35px;
+}
+
+.outer-containerheader {
+    padding:0.1px;
+    background-color:#17252A; 
+}
+
+/* Specific header styling for animation container */
+header#animation-container {
+    width: 100%; 
+    height: 450px; 
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effect for the header */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.draggable-header:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.draggable-header {
+    cursor: grab;
+}
+
+.dragging {
+    cursor: grabbing;
+}
+  
+/* Animated logo styles */
+.name-logo-artwork {
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: block;
+    backface-visibility: hidden; 
+    z-index: 1; /* Add a higher z-index */
+    position: relative; /* Add position relative */
+}
+
+/* Hover effect for animated logo */
+.name-logo-artwork:hover {
+    transform: rotateY(360deg); 
+    opacity: 0.8; 
+}
+
+/* Styling for header content */
+.header-content {
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    color: white; 
+    z-index: 100; 
+}
+
+/* Main content margin */
+.main-content {
+    margin-right: 60px;
+}
+
+/* Cursor style for active interaction */
+#animation-container.active-interaction {
+    cursor: grab;
+}
+
+/* Animation container styling */
+#animation-container {
+    position: relative;
+    height: 450px;
+    background: url('static/background.gif');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Top navigation bar styling */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: transparent;
+}
+.artwork-title h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#17252A;
+    font-size: 30px;
+}
+
+/* Logo artwork styles */
+.logo-artwork {
+    width: auto; 
+    height: 5vw; 
+    max-height: 60px; 
+    flex: 0 1 auto;
+}
+
+/* Greeting text styling in artwork section */
+.greeting-artwork {
+    margin: 10px;
+    font-size: 2vw; 
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* Flexbox row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Column layout within flexbox row */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+/* Image styles within columns */
+.column img {
+    margin-top: 12px; 
+    margin-bottom: 12px; 
+    margin-left: auto;
+    margin-right: auto; 
+    vertical-align: middle;
+    width: calc(100% - 8px); 
+    border-radius: 5%;
+    transition: transform 0.5s ease;
+}
+
+/* Additional greeting artwork styles */
+.greeting-artwork {
+    color: white;
+    margin: 0; 
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Gif container styles for artwork */
+.gif-container-artwork {
+    position: relative;
+    display: inline-block; 
+}
+
+/* Hover text styles for gif container artwork */
+.gif-container-artwork .hover-text {
+    position: absolute;
+    bottom: 25px; 
+    right: 50px; 
+    display: none;
+    background-color: #61CAFA;
+    color: white; 
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    z-index: 10;
+}
+
+/* Display hover text on hover in gif container */
+.gif-container-artwork:hover .hover-text {
+    display: block;
+}
+
+/* Responsive adjustments for columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+/*

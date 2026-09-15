@@ -1,0 +1,110 @@
+/* Basic font style for the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+  
+/* Styling for contact sidebar */
+#contact-sidebar {
+    background: linear-gradient(to left, #3AAFA9, #2B7A78);
+    padding: 20px;
+    width: 400px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    font-family: Arial, sans-serif; 
+}
+
+/* Flexbox layout for contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for input fields in contact form */
+.contact-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for avatar icon in contact header */
+.avatar-icon {
+    width: 110px; 
+    height: 110px; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+/* Heading style within contact header */
+.contact-header h2 {
+    font-size: 24px; 
+    color: white; 
+    font-weight: 600; 
+}
+
+/* Submit button styling in contact form */
+.contact-submit {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-submit:hover {
+    background-color: #0056b3; 
+}
+
+/* Social media links styling */
+.social-media-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 5px;
+    color: #007bff; 
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    color: #0056b3;
+}
+
+.contact-input, .contact-submit {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Transition effect for inputs, buttons, and social links */
+.contact-input, .contact-submit, .social-link {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for inputs, buttons, and social links */
+.contact-input:hover, .contact-submit:hover, .social-link:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments for contact sidebar on smaller screens */
+@media screen and (max-width: 768px) {
+    #contact-sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*
